@@ -18,6 +18,7 @@ This is adapted from Andrej Karpathy's LLM Council. He dispatches queries to mul
 The council is for questions where being wrong is expensive.
 
 Good council questions:
+
 - "Should I launch a $97 workshop or a $497 course?"
 - "Which of these 3 positioning angles is strongest?"
 - "I'm thinking of pivoting from X to Y. Am I crazy?"
@@ -25,6 +26,7 @@ Good council questions:
 - "Should I hire a VA or build an automation first?"
 
 Bad council questions:
+
 - "What's the capital of France?" (one right answer, no need for perspectives)
 - "Write me a tweet" (creation task, not a decision)
 - "Summarize this article" (processing task, not judgment)
@@ -38,18 +40,23 @@ The council shines when there's genuine uncertainty and the cost of a bad call i
 Each advisor thinks from a different angle. They're not job titles or personas. They're thinking styles that naturally create tension with each other.
 
 ### 1. The Contrarian
+
 Actively looks for what's wrong, what's missing, what will fail. Assumes the idea has a fatal flaw and tries to find it. If everything looks solid, digs deeper. The Contrarian is not a pessimist. They're the friend who saves you from a bad deal by asking the questions you're avoiding.
 
 ### 2. The First Principles Thinker
+
 Ignores the surface-level question and asks "what are we actually trying to solve here?" Strips away assumptions. Rebuilds the problem from the ground up. Sometimes the most valuable council output is the First Principles Thinker saying "you're asking the wrong question entirely."
 
 ### 3. The Expansionist
+
 Looks for upside everyone else is missing. What could be bigger? What adjacent opportunity is hiding? What's being undervalued? The Expansionist doesn't care about risk (that's the Contrarian's job). They care about what happens if this works even better than expected.
 
 ### 4. The Outsider
+
 Has zero context about you, your field, or your history. Responds purely to what's in front of them. This is the most underrated advisor. Experts develop blind spots. The Outsider catches the curse of knowledge: things that are obvious to you but confusing to everyone else.
 
 ### 5. The Executor
+
 Only cares about one thing: can this actually be done, and what's the fastest path to doing it? Ignores theory, strategy, and big-picture thinking. The Executor looks at every idea through the lens of "OK but what do you do Monday morning?" If an idea sounds brilliant but has no clear first step, the Executor will say so.
 
 **Why these five:** They create three natural tensions. Contrarian vs Expansionist (downside vs upside). First Principles vs Executor (rethink everything vs just do it). The Outsider sits in the middle keeping everyone honest by seeing what fresh eyes see.
@@ -64,7 +71,7 @@ When the user says "council this" (or any trigger phrase), do two things before 
 
 **A. Scan the workspace for context.** The user's question is often just the tip of the iceberg. Their Claude setup likely contains files that would dramatically improve the council's output. Before framing, quickly scan for and read any relevant context files:
 
-- `CLAUDE.md` or `claude.md` in the project root or workspace (business context, preferences, constraints)
+- `CLAUDE.md`, `claude.md`, or `_Claude.md` in the project root or workspace (business context, preferences, constraints)
 - Any `memory/` folder (audience profiles, voice docs, business details, past decisions)
 - Any files the user explicitly referenced or attached
 - Recent council transcripts in this folder (to avoid re-counciling the same ground)
@@ -250,6 +257,7 @@ Open the HTML file after generating it so the user can see it immediately.
 ### step 6: save the full transcript
 
 Save the complete council transcript as `council-transcript-[timestamp].md` in the same location. This includes:
+
 - The original question
 - The framed question
 - All 5 advisor responses
@@ -289,15 +297,15 @@ The user sees the HTML report. The transcript is there if they want to dig deepe
 
 **Chairman's Verdict:**
 
-*Where the council agrees:* The beginner solopreneur angle has real demand, but the current framing (Claude Code course) is too tool-specific and won't resonate with non-technical buyers.
+_Where the council agrees:_ The beginner solopreneur angle has real demand, but the current framing (Claude Code course) is too tool-specific and won't resonate with non-technical buyers.
 
-*Where the council clashes:* Price. The Contrarian says $297 is too high given competition. The Expansionist says it's too low for the value. The resolution likely depends on how much support and community access is bundled.
+_Where the council clashes:_ Price. The Contrarian says $297 is too high given competition. The Expansionist says it's too low for the value. The resolution likely depends on how much support and community access is bundled.
 
-*Blind spots caught:* The Outsider's point that "Claude Code" means nothing to the target buyer is the single most important insight. Every advisor except the Outsider assumed the audience already knows what this is.
+_Blind spots caught:_ The Outsider's point that "Claude Code" means nothing to the target buyer is the single most important insight. Every advisor except the Outsider assumed the audience already knows what this is.
 
-*Recommendation:* Don't build the course yet. Validate with a lower-commitment offer first. But reframe entirely: sell the outcome (automate your business, get 10 hours back per week), not the tool.
+_Recommendation:_ Don't build the course yet. Validate with a lower-commitment offer first. But reframe entirely: sell the outcome (automate your business, get 10 hours back per week), not the tool.
 
-*One thing to do first:* Run a $97 live workshop called "How to automate your first business task with AI" to 50 people. Don't mention Claude Code in the title.
+_One thing to do first:_ Run a $97 live workshop called "How to automate your first business task with AI" to 50 people. Don't mention Claude Code in the title.
 
 ---
 
